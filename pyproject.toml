@@ -1,0 +1,8 @@
+[project]
+name = "trafficgen"
+version = "0.1.0"
+description = "Traffic generator testbed"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]

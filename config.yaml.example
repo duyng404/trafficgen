@@ -1,0 +1,52 @@
+
+# set to true to enable much more verbose logging
+debug_mode: false
+
+# experiment time limit in minutes
+time_limit: 10
+
+# available activity profiles: low, medium, high
+# determines how frequent the interactions (like scrolling/tapping) takes place
+activity_profile: high
+
+# settings for the randomapp experiment
+randomapp:
+  # available app freq profiles: low, medium, high
+  # determines how frequent the script switches between the apps
+  app_frequency_profile: high
+
+# settings for the randombrowse experiment
+randombrowse:
+  # available app freq profiles: low, medium, high
+  # determines how frequent the script switches between the websites
+  websites_frequency_profile: medium
+
+# settings for the randomvpn experiment
+# this experiment does not use the global time_limit value, but has its own settings
+randomvpn:
+  time_limit_per_app: 10
+  apps_per_run: 1
+
+emulator:
+  avd: Pixel_4_API_30
+  # avd: avd30
+  disable_audio: true
+  disable_video: false
+  disable_gpu_acceleration: false
+  tcpdump: false
+  keep_on_after_failure: true
+
+pcap_path: /home/rei/code/gradprj/pcaps/randomapp
+
+google_account:
+  email:
+  password:
+
+instagram_account:
+  password:
+
+facebook_account:
+  password:
+
+discord_account:
+  password:
